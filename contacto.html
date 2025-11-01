@@ -23,7 +23,7 @@
             <a href="">Quiénes somos</a>
             <a href="">Contacto</a>
             <a href=""><img src="img/icons/estrella-colaborar.svg" width="13" height="12" alt="estrella del botón colaborar">Colaborar</a>
-            <div></div>
+            <div>
                 <input type="text" placeholder="Buscar">
                 <img src="img/icons/lupa-desk.svg" width="18" height="18" alt="lupa del buscador">
             </div>
@@ -31,7 +31,25 @@
     </header>
 
     <main>
+        <section>
+            <h1>Contacto</h1>
+            <form method="post" action="mailto:?subject'Formulario movaq'" target="_blank" enctype="text/plain">
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre" required>
 
+                <label for="Correo">Correo</label>
+                <input type="text" name="correo" id="correo" maxlength="40" placeholder="Correo" required>
+
+                <label for="Asunto">Asunto</label>
+                <input type="text" name="asunto" id="asunto" maxlength="40" placeholder="Asunto" required>
+
+                <label for="Mensaje">Mensaje</label>
+                <textarea name="Mensaje" id="Mensaje"></textarea>
+
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
     </main>
 
     <footer>
