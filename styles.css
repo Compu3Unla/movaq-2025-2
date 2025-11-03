@@ -19,52 +19,60 @@
 }
 
 body {
+    display:flex;
+    flex-direction: column;
     background: var(--verde-fondo);
-    max-width: 1920px;
+    /*max-width: 1920px;*/
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 h1 {
     color: var(--amarillo);
-    font-size: 72px;
+    font-size: 4rem;
     font-style: medium;
     font-weight: 500;
-    line-height: 120px;
+    line-height: 5.2rem;
     text-align: center;
 }
 
 h2 {
     color: var(--blanco);
-    font-size: 48px;
+    font-size: 3rem;
     font-style: medium;
     font-weight: 500;
-    line-height: normal;
+    line-height: 3.9rem;
     text-align: center;
 }
 
 h3 {
     color: var(--blanco);
     text-align: left;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: medium;
     font-weight: 500;
-    line-height: normal;
+    line-height: 2.6rem;
 }
 
 h4 {
     color: var(--blanco);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: medium;
     font-weight: 500;
-    line-height: normal;
+    line-height: 2rem;
     text-align: center;
 }
 
 p {
     text-wrap-style: balance;
-    line-height: 1.7rem;
+    line-height: 1.4rem;
     max-width: 500px;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--blanco);
     text-wrap: pretty;
 }
@@ -73,11 +81,12 @@ header {}
 
 
 /* Sección general */
-#quienessomos {
+.contenedor-section {
     display: flex;
+    max-width: 1088px;
     flex-direction: column;
-    align-items: center;
     gap: 40px;
+    align-items: center;
 }
 
 /* Artículo El centro */
@@ -85,14 +94,14 @@ header {}
     display: flex;
     align-items: center;
     border: 2px solid var(--amarillo);
-    border-radius: 15px;
+    border-radius: 32px;
     padding: 20px;
-    width: 80%;
+    width: 100%;
     max-width: 1000px;
 }
 
 .elcentro img {
-    border-radius: 10px;
+    border-radius: 25px;
     margin-right: 25px;
 }
 
@@ -116,7 +125,6 @@ header {}
 }
 
 .asociadas p {
-    text-align: justify;
     margin-bottom: 15px;
 }
 
