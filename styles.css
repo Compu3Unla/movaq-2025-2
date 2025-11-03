@@ -44,7 +44,7 @@ h2 {
 
 h3 {
     color: var(--blanco);
-    text-align: center;
+    text-align: left;
     font-size: 32px;
     font-style: medium;
     font-weight: 500;
@@ -65,6 +65,91 @@ p {
     line-height: 1.7rem;
     max-width: 500px;
     font-size: 16px;
+    color: var(--blanco);
+    text-wrap: pretty;
 }
 
 header {}
+
+
+/* Sección general */
+#quienessomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Artículo El centro */
+.elcentro {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--amarillo);
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.elcentro img {
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+
+/* Artículo Asociadas */
+.asociadas {
+    border: 2px solid var(--amarillo);
+    border-radius: 15px;
+    padding: 20px 30px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.asociadas h3 {
+    margin-bottom: 10px;
+}
+
+.columnas {
+    display: flex;
+    column-gap: 40px;
+}
+
+.asociadas p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Botón final */
+#quienessomos .boton-centro {
+    display: inline-block;
+    background-color: var(--verde-fondo);
+    border: 2px solid var(--amarillo);
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/*miranos acá*/
+#miranos {
+    padding: 40px;
+}
+
+/* videos*/
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.videos video {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
