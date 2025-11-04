@@ -77,8 +77,47 @@ p {
     text-wrap: pretty;
 }
 
-header {}
+a {
+    
+}
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--verde-claro);
+    height: 90px;
+    width: 100%;
+}
+
+header nav {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px 0 40px;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.menu-header a {
+    color: var(--blanco);
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--amarillo);
+    border: 1px solid var(--blanco);
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.3s;
+    color: var(--verde-fondo);
+}
 
 /* Sección general */
 .contenedor-section {
@@ -87,6 +126,7 @@ header {}
     flex-direction: column;
     gap: 40px;
     align-items: center;
+    margin: 0 40px 0 40px;
 }
 
 /* Artículo El centro */
