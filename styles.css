@@ -228,7 +228,6 @@ footer {
     background-color: var(--verde-claro);
     height: 120px;
     width: 100%;
-<<<<<<<<< Temporary merge branch 1
     display: flex;
     padding: 39px 304px;
     align-items: center;
@@ -536,7 +535,7 @@ footer {
 
 
 /*hasta acá Juan*/
-=========
+
 main {
 display: flex;
 flex-direction: column;
@@ -592,4 +591,3 @@ button.next { right: 10px; }
     height: 240px;
   }
 }
->>>>>>>>> Temporary merge branch 2
