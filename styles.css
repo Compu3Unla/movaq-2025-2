@@ -19,7 +19,7 @@
 }
 
 body {
-    display:flex;
+    display: flex;
     flex-direction: column;
     background: var(--verde-fondo);
     /*max-width: 1920px;*/
@@ -70,15 +70,11 @@ h4 {
 
 p {
     text-wrap-style: balance;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     max-width: 500px;
     font-size: 1rem;
     color: var(--blanco);
     text-wrap: pretty;
-}
-
-a {
-    
 }
 
 header {
@@ -95,14 +91,13 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 40px 0 40px;
+    margin: 0 40px;
 }
 
 .menu-header {
     display: flex;
     align-items: center;
     gap: 40px;
-
 }
 
 .menu-header a {
@@ -126,7 +121,7 @@ header nav {
     flex-direction: column;
     gap: 40px;
     align-items: center;
-    margin: 0 40px 0 40px;
+    margin: 40px 40px 0 40px;
 }
 
 /* Artículo El centro */
@@ -138,20 +133,17 @@ header nav {
     padding: 20px;
     width: 100%;
     max-width: 1000px;
+    gap: 40px;
 }
 
 .elcentro img {
     border-radius: 25px;
-    margin-right: 25px;
 }
 
 
 /* Artículo Asociadas */
 .asociadas {
-    border: 2px solid var(--amarillo);
-    border-radius: 15px;
     padding: 20px 30px;
-    width: 80%;
     max-width: 1000px;
 }
 
@@ -164,21 +156,28 @@ header nav {
     column-gap: 40px;
 }
 
+.columnas p {
+    width: 50%;
+}
+
 .asociadas p {
     margin-bottom: 15px;
 }
 
 /* Botón final */
-#quienessomos .boton-centro {
-    display: inline-block;
+.boton-outline {
+    display: flex;
     background-color: var(--verde-fondo);
     border: 2px solid var(--amarillo);
     font-weight: 600;
-    border-radius: 20px;
-    padding: 10px 25px;
-    margin-top: 10px;
-    text-decoration: none;
+    border-radius: 9999px;
+    padding: 10px 20px;
     transition: 0.3s;
+    gap: 8px;
+}
+
+.boton-outline p {
+    color: var(--amarillo);
 }
 
 /*miranos acá*/
@@ -187,20 +186,355 @@ header nav {
 }
 
 /* videos*/
-.videos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
-    justify-items: center;
-    max-width: 900px;
-    margin: 0 auto;
+.videos-izq,
+.video-derecha video {
+    border-radius: 10px;
 }
 
-.videos video {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+.video-derecha {
+    display: flex;
+    flex-direction: column;
 }
+
+.contenedor-videos {
+    display: flex;
+    padding: 40px;
+}
+
+/*nos apoyan*/
+
+.logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.logos img {
+    max-width: 240px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.logos img:hover {
+    transform: scale(1.05);
+}
+
+.sponsors {
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: var(--verde-claro);
+    height: 120px;
+    width: 100%;
+    display: flex;
+    padding: 39px 304px;
+    align-items: center;
+    gap: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*hasta acá Marie*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Hasta acá Marcos*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*hasta acá Juan*/
 
 
 
