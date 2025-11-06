@@ -124,10 +124,15 @@ header nav {
     height: 40px;
     font-weight: bold;
     align-items: center;
+    gap: 5px;
 }
 
 .button p {
     color: var(--verde-fondo);
+}
+
+.button:hover {
+    background-color: var(--amarillo-claro);
 }
 
 /* Sección general */
@@ -195,6 +200,10 @@ header nav {
 
 .boton-outline p {
     color: var(--amarillo);
+}
+
+.boton-outline:hover {
+    background-color: var(--verde-claro);
 }
 
 /*miranos acá*/
@@ -610,7 +619,6 @@ button.next {
 .prueba-acordeon {
     width: 100%;
     overflow: hidden;
-    margin-bottom: 1rem;
     transition: all 0.4s ease;
     border: 2px solid var(--verde-claro);
     border-radius: 32px;
@@ -622,7 +630,7 @@ button.next {
 .prueba-acordeon summary {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 20px;
     cursor: pointer;
     list-style: none;
     padding: 30px;
@@ -638,25 +646,26 @@ button.next {
 }
 
 .portada {
-    width: 25%;
-    height: 100%;
+    height: fit-content;
+    width: 272px;
     object-fit: cover;
     border-radius: 8px 0 0 8px;
-    border-radius: 15px;
+    border-radius: 18px;
 }
 
 .prueba-columna-info {
     flex: 1;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: stretch;
+    gap: 4px;
 }
 
 .columna-botones {
     display: flex;
     flex-direction: column;
-    height: 120px;
+
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -677,16 +686,17 @@ button.next {
 .prueba-info-detalles {
     display: flex;
     flex-direction: row;
-    padding: 1rem;
+    padding: 30px;
     opacity: 0;
     transition: all 0.5s ease;
     overflow: hidden;
-    gap: 25px;
+    gap: 30px;
 }
 
 .prueba-info-detalles div {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .prueba-info-detalles h5 {
@@ -696,28 +706,20 @@ button.next {
     color: var(--blanco);
     text-wrap: pretty;
     font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.prueba-info-detalles ul {
+    color: var(--blanco);
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 /* Cuando el acordeón se abre */
-.prueba-acordeon[open] summary {
-    height: 33vh;
-    /* abierto: 1/3 aprox */
-}
 
 .prueba-acordeon[open] .prueba-info-detalles {
     opacity: 1;
     display: flex;
-}
-
-.acordeon[open] img {
-    width: 33%;
-    /* cambia el ancho al abrir */
-}
-
-.acordeon[open] .acordeon-abierto-datos {
-    width: 66%;
-    /* cambia el ancho al abrir */
-    height: 100%;
 }
 
 .div-autor img {
@@ -730,6 +732,7 @@ button.next {
 .div-autor {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .div-fechahora img {
@@ -740,8 +743,10 @@ button.next {
 
 .div-fechahora {
     display: flex;
-    width: 100%;
+    gap: 20px;
 }
+
+
 
 .div-tags p {
     background-color: var(--verde-claro);
@@ -759,8 +764,8 @@ button.next {
 
 .div-fechahora .fecha {
     display: flex;
-    width: 100%;
     gap: 10px;
+    align-items: center;
 }
 
 .button-acordeon {
@@ -790,6 +795,10 @@ button.next {
 .flecha-abajo {
     width: 22px;
     height: 13px;
+}
+
+.prueba-acordeon[open] .flecha-abajo {
+    transform: rotate(180deg);
 }
 
 
@@ -1121,13 +1130,13 @@ input[type=reset]:hover {
     background-color: var(--verde-intermedio);
 }
 
- input[type=submit] {
+input[type=submit] {
     cursor: pointer;
- }
+}
 
- input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: var(--amarillo-claro);
- }
+}
 
 .datos-contacto {
     display: flex;
@@ -1163,7 +1172,7 @@ iframe {
     border: 0px;
 }
 
-.medios-pago{
+.medios-pago {
     display: flex;
     gap: 30px;
     padding-bottom: 40px;
