@@ -216,7 +216,6 @@ header nav {
 .contenedor-videos {
     display: flex;
     width: 100%;
-    justify-content: center;
 }
 
 /*nos apoyan*/
