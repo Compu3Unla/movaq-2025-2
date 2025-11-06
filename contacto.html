@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <meta charset="utf-8">
     <link href="styles.css" rel="stylesheet" type="text/css">
@@ -8,11 +9,13 @@
     <link rel="icon" href="img/icons/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-        <header>
+    <header>
         <nav>
             <a class="logo-header">
                 <img src="img/icons/logo-nav.svg" height="50" alt="logo movaq">
@@ -23,8 +26,8 @@
                 <a href="construccion.html">Servicios</a>
                 <a href="quienessomos.html">Quiénes somos</a>
                 <a href="contacto.html">Contacto</a>
-                <a href="construccion.html" class="button"><img src="img/icons/estrella-colaborar.svg" width="13" height="12"
-                        alt="estrella del botón colaborar">Colaborar</a>
+                <a href="construccion.html" class="button"><img src="img/icons/estrella-colaborar.svg" width="13"
+                        height="12" alt="estrella del botón colaborar">Colaborar</a>
             </div>
             <div class="buscador-header">
                 <input type="text" placeholder="Buscar">
@@ -34,24 +37,61 @@
     </header>
 
     <main>
-        <section>
+        <section class="contenedor-section">
             <h1>Contacto</h1>
-            <form method="post" action="mailto:?subject'Formulario movaq'" target="_blank" enctype="text/plain">
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre" required>
+            <div class="contenedor-contacto">
+                <form method="post" action="mailto:estudioaquelarre@yahoo.com.ar?subject'Formulario movaq'" target="_blank" enctype="text/plain">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre" required
+                        class="input-contacto">
 
-                <label for="Correo">Correo</label>
-                <input type="text" name="correo" id="correo" maxlength="40" placeholder="Correo" required>
+                    <label for="Correo">Correo</label>
+                    <input type="text" name="correo" id="correo" maxlength="40" placeholder="Correo" required
+                        class="input-contacto">
 
-                <label for="Asunto">Asunto</label>
-                <input type="text" name="asunto" id="asunto" maxlength="40" placeholder="Asunto" required>
+                    <label for="Asunto">Asunto</label>
+                    <input type="text" name="asunto" id="asunto" maxlength="40" placeholder="Asunto" required
+                        class="input-contacto">
 
-                <label for="Mensaje">Mensaje</label>
-                <textarea name="Mensaje" id="Mensaje"></textarea>
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea name="Mensaje" id="Mensaje" placeholder="Mensaje"></textarea>
 
-                <input type="reset" value="Borrar">
-                <input type="submit" value="Enviar">
-            </form>
+                    <div class="botones-contacto">
+                        <input type="reset" value="Borrar" class="boton-outline">
+                        <input type="submit" value="Enviar" class="button">
+                    </div>
+                </form>
+
+                <div class="datos-contacto">
+                    <address>
+                        <a href="tel:3980-4596" class="linea-contacto">
+                            <img src="img/icons/telefono-contacto.svg" width="15" height="16" alt="icono telefono">
+                            <p>3980-4596</p>
+                        </a>
+                        <a href="mailto:estudioaquelarre@yahoo.com.ar" class="linea-contacto">
+                            <img src="img/icons/correo-contacto.svg" width="16" height="11" alt="icono correo">
+                            <p> estudioaquelarre@yahoo.com.ar </p>
+                        </a>
+                        <div class="linea-contacto">
+                            <img src="img/icons/ubicacion-contacto.svg" width="13" height="16" alt="icono ubicacion">
+                            <p>Malabia 852 - Buenos Aires</p>
+                        </div>
+                    </address>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3351345202072!2d-58.4347283!3d-34.5956861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb382499d3e9%3A0x8f8cb6c162d8f46b!2sMOVAQ%20-%20Aquelarre%20en%20Movimiento%20esgrima%20historica!5e0!3m2!1ses-419!2sar!4v1762381173292!5m2!1ses-419!2sar"
+                        width="500px" height="340px"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor-section">
+            <h2>Medios de pago</h2>
+            <div class="medios-pago">
+                <img src="img/contacto/master-card.jpg" alt="logo mastercard" class="tarjetas-pago">
+                <img src="img/contacto/american-express.jpg" alt="logo american express" class="tarjetas-pago">
+                <img src="img/contacto/visa.jpg" alt="logo visa" class="tarjetas-pago">
+            </div>
+
         </section>
     </main>
 
