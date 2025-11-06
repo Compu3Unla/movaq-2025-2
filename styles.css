@@ -300,13 +300,24 @@ a.button {
 
 /*miranos acá*/
 #miranos {
+    display: flex;
+    flex-direction: column;
     padding: 40px;
 }
 
 /* videos*/
-.videos-izq,
+.video-izq video,
 .video-derecha video {
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.video-izq video {
+    max-width: 370px;
+}
+
+.video-derecha video {
+    max-width: 600px;
 }
 
 .video-derecha {
@@ -317,7 +328,9 @@ a.button {
 .contenedor-videos {
     display: flex;
     width: 100%;
-}
+    justify-content: center;
+    margin-top: 40px;
+    }
 
 /*nos apoyan*/
 
@@ -352,68 +365,44 @@ footer {
     gap: 48px;
 }
 
+@media (max-width: 600px) {
 
+    .contenedor-section {
+        padding: 20px;
+    }
 
+    .contenedor-info-conimg {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .contenedor-info-conimg img,
+    .contenedor-info-conimg .texto {
+        width: 100%;
+    }
 
+    .contenedor-videos {
+        flex-direction: column;
+    }
 
+    .video-derecha video {
+        width: 100%;
+    }
 
+    .logos {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .logos img {
+        max-width: 80%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .boton-outline {
+        justify-content: center;
+        width: 100%;
+    }
+}
 
 
 
