@@ -1178,7 +1178,7 @@ iframe {
 
 .sitio-construccion {
     background-color: var(--blanco);
-    height: 100vh;
+    height: calc(100vh - 210px);
     background-image: url(img/icons/fondo-construccion.svg);
     display: flex;
     justify-content: center;
