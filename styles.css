@@ -738,7 +738,17 @@ button.next {
     right: 10px;
 }
 
-/* Responsive */
+
+@media (max-width: 1150px) {
+    .carrusel {
+        height: 300px;
+    }
+
+    .slides img {
+        height: 300px;
+    }
+}
+
 @media (max-width: 750px) {
     .carrusel {
         height: 240px;
@@ -748,11 +758,6 @@ button.next {
         height: 240px;
     }
 }
-
-
-
-
-
 
 .prueba-acordeon {
     width: 100%;
@@ -960,7 +965,7 @@ button.next {
 
 .tarjeta-home {
     width: 100%;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1000,16 +1005,23 @@ button.next {
 }
 
 .tarjeta-link {
-  display: block;              
-  text-decoration: none;       
-  color: inherit;   
-  width: 30%;           
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 30%;
 }
 
 .tarjeta-link:hover .card {
-  transform: scale(1.02);      
-  transition: transform 0.2s;
-  cursor: pointer;             
+    transform: scale(1.02);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.tarj-datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 
@@ -1414,6 +1426,12 @@ iframe {
 }
 
 @media screen and (max-width: 600px) {
+    .carrusel {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
 
     /* header y menu hamburguesa*/
     header {
@@ -1421,6 +1439,12 @@ iframe {
         justify-content: center;
         height: 82px;
     }
+
+
+    .button {
+        padding: 0px 15px;
+    }
+
 
     nav {
         display: flex;
@@ -1443,9 +1467,9 @@ iframe {
     .menu-header {
         display: flex;
         flex-direction: column;
-        align-items:start;
+        align-items: start;
         width: 100%;
-        padding-top: 50px ;
+        padding-top: 50px;
         gap: 10px;
         position: absolute;
         overflow: hidden;
@@ -1453,6 +1477,7 @@ iframe {
         padding-left: 40px;
         top: 82px;
         transition: .2s;
+  z-index: 999;
     }
 
     .navbar .nav-link.active {
@@ -1460,7 +1485,7 @@ iframe {
         color: var(--blanco);
         height: auto;
         margin-bottom: 40px;
-        padding-bottom: 20px ;
+        padding-bottom: 20px;
         width: 80%;
     }
 
@@ -1468,9 +1493,11 @@ iframe {
     .nav-link {
         border-bottom: 1px solid var(--verde-intermedio);
         height: auto;
-        margin-bottom: 40px;
-        padding-bottom: 20px ;
+        /* margin-bottom: 40px;
+        padding-bottom: 20px ; */
         width: 80%;
+        margin: 0px;
+        padding: 10px 0px 20px 0px;
     }
 
     .menu-hamburguesa:checked+.menu-header {
@@ -1478,4 +1505,48 @@ iframe {
         height: calc(100vh - 82px);
         padding-bottom: 30px;
     }
+
+
+    .texto h3 {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .tres-modulos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        padding-right: 0px;
+        padding-bottom: 60px;
+        padding-left: 0px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .tarjeta-home {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: var(--verde-intermedio);
+        border-radius: 32px;
+        border-radius: 32px;
+        flex-direction: row;
+    }
+
+    .tarjeta-home img {
+        width: 50%;
+        height: auto;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 32px;
+    }
+
+    .tarjeta-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        width: 100%;
+    }
+
 }
