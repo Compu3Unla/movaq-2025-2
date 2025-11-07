@@ -239,6 +239,7 @@ a.button {
     gap: 40px;
     align-items: center;
     margin: 40px;
+    width: 100%;
 }
 
 /* Artículo El centro */
@@ -367,6 +368,7 @@ footer {
     align-items: center;
     gap: 48px;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .footer-redes {
