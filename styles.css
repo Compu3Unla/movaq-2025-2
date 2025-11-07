@@ -33,7 +33,7 @@ main {
 }
 
 section {
-    width: 1080px;
+    max-width: 1080px;
     margin: 40px;
 }
 
@@ -375,6 +375,12 @@ footer {
     gap: 40px;
 }
 
+@media (max-width: 1279px) {
+    .buscador-header {
+        display:none;
+    }
+}
+
 @media (max-width: 600px) {
 
     .contenedor-section {
@@ -534,6 +540,24 @@ footer {
     text-align: left;
 }
 
+@media (max-width: 600px) {
+    footer {
+        background-color: var(--verde-claro);
+        height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-redes {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+}
 
 
 
