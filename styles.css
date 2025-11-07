@@ -951,9 +951,8 @@ button.next {
 
 .tres-modulos h4 {
     font-size: 1rem;
-    line-height: 1rem;
-    margin-bottom: 15px;
-    padding-bottom: 6;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .tres-modulos h3 {
@@ -961,8 +960,8 @@ button.next {
 }
 
 .tarjeta-home {
-    width: 30%;
-
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1001,6 +1000,18 @@ button.next {
     width: 57%;
 }
 
+.tarjeta-link {
+  display: block;              
+  text-decoration: none;       
+  color: inherit;   
+  width: 30%;           
+}
+
+.tarjeta-link:hover .card {
+  transform: scale(1.02);      
+  transition: transform 0.2s;
+  cursor: pointer;             
+}
 
 
 
