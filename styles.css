@@ -992,13 +992,14 @@ button.next {
 }
 
 .index-contactar {
-    display: flex;
-    width: 50%;
-    gap: 30px;
+    width: 100%;
+        display: flex;
+    justify-content: center;
 }
 
-
-
+.index-contactar .contenedor-boton{
+    width: 57%;
+}
 
 
 
