@@ -913,9 +913,19 @@ button.next {
     transform: rotate(180deg);
 }
 
+.tres-modulos {
+    display: flex;
+}
 
+.tarjeta-home {
+    display: flex;
+    flex-direction: column;
+}
 
-
+.tarjeta-home img {
+    width: 342px;
+    height: 272px;
+}
 
 
 
