@@ -185,20 +185,11 @@ a.button {
 }
 
 .buscador-header {
-<<<<<<< HEAD
-    display: inline-block;
-}
-
-.buscador-header input {
-    padding: 8px 15px 8px 40px;
-    border: 0px;
-=======
     display: flex;
     align-items: center;
     gap: 10px;
     background-color: var(--blanco);
     padding-right: 15px;
->>>>>>> 797dcb02a6d51208654dbc870f1411056fdd1684
     border-radius: 9999px;
     font-size: 0.9rem;
     height: 40px;
