@@ -239,6 +239,7 @@ a.button {
     gap: 40px;
     align-items: center;
     margin: 40px;
+    width: 100%;
 }
 
 /* Artículo El centro */
@@ -274,7 +275,7 @@ a.button {
 }
 
 .columnas p {
-    width: 50%;
+    max-width: 50%;
 }
 
 .asociadas p {
@@ -377,7 +378,7 @@ footer {
 
 @media (max-width: 1279px) {
     .buscador-header {
-        display:none;
+        display: none;
     }
 }
 
@@ -416,6 +417,16 @@ footer {
 
     .boton-outline {
         justify-content: center;
+        width: 100%;
+    }
+
+    .columnas {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .columnas p {
         width: 100%;
     }
 }
