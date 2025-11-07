@@ -1207,6 +1207,16 @@ button.next {
 
 /*Contacto*/
 
+.section-contacto {
+    display: flex;
+    max-width: 1080px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin: 40px;
+    width: 100%;
+}
+
 .contenedor-contacto {
     display: flex;
     width: 100%;
