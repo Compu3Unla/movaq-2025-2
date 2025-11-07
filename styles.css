@@ -1024,6 +1024,10 @@ button.next {
     width: 100%;
 }
 
+.tarj-datos h3 {
+    color: var(--amarillo);
+}
+
 
 
 
@@ -1482,9 +1486,9 @@ iframe {
 
     .navbar .nav-link.active {
         border-bottom: 1px solid var(--verde-intermedio);
-        color: var(--blanco);
+        color: var(--amarillo);
         height: auto;
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
         padding-bottom: 20px;
         width: 80%;
     }
@@ -1507,9 +1511,12 @@ iframe {
     }
 
 
-    .texto h3 {
+    h3 {
         margin-bottom: 0.5rem;
         text-align: center;
+        font-size:1.7rem;
+        line-height: 2rem;
+            text-wrap: pretty;
     }
 
     .tres-modulos {
@@ -1547,6 +1554,38 @@ iframe {
         text-decoration: none;
         color: inherit;
         width: 100%;
+    }
+
+    h1 {
+        font-size:3rem;
+    }
+
+    h2 {
+        font-size:2rem;
+        line-height: 2.4rem;
+            text-wrap: pretty;
+    }
+
+    h3 {
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-size:1.7rem;
+        line-height: 2rem;
+            text-wrap: pretty;
+    }
+
+    .tarj-datos h4 {
+font-size: 0.9rem;
+        line-height: 1.2;
+        text-wrap: pretty;
+    }
+
+    .modulos {
+        margin:5%;
+    }
+
+    .contenedor-section {
+        margin:0px;
     }
 
 }
