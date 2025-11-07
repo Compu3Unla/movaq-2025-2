@@ -260,8 +260,11 @@ a.button {
 
 /* Artículo Asociadas */
 .asociadas {
-    padding: 20px 30px;
+padding: 20px 30px;
     max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .asociadas h3 {
@@ -270,11 +273,11 @@ a.button {
 
 .columnas {
     display: flex;
-    column-gap: 40px;
-}
-
-.columnas p {
-    max-width: 50%;
+    gap: 10%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .asociadas p {
@@ -406,6 +409,10 @@ footer .navbar {
         flex-direction: column;
         align-items: center;
     }
+
+    .columnas {
+        width: 90%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -434,29 +441,18 @@ footer .navbar {
 
     .boton-outline {
         justify-content: center;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .columnas {
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
     }
 
     .columnas p {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*hasta acá Marie*/
@@ -1605,6 +1601,28 @@ font-size: 0.9rem;
     gap: 32px;
 }
 
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+
+.datos-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones-contacto {
+
+    justify-content: center;
+}
+
+form {
+    width: 90%;
+}
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -1616,6 +1634,11 @@ font-size: 0.9rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 32px;
-    justify-items: center;
+    justify-items: center;}
+
+    .botones-contacto {
+
+    justify-content: center;
 }
+
 }
